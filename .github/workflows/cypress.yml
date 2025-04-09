@@ -4,7 +4,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./csp-tech-teste  # 👈 ajuste para o caminho correto
+        working-directory: ./csp-tech-teste
 
     steps:
       - name: Checkout repo
@@ -13,7 +13,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
         run: npm ci
